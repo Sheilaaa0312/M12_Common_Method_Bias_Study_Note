@@ -148,5 +148,5 @@ Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P. (2003). Commo
 
 # Appendix
 
-- GitHub repository
-- Published GitHub Pages
+- [GitHub repository](https://github.com/Sheilaaa0312/M12_Common_Method_Bias_Study_Note)
+- [GitHub Pages](https://sheilaaa0312.github.io/M12_Common_Method_Bias_Study_Note/)
