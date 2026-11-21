@@ -1,0 +1,152 @@
+---
+title: "M12 Article Reading & Summary: Common Method Bias"
+subtitle: "Study notes on Podsakoff, MacKenzie, and Podsakoff (2012)"
+author: "Xueying Luo"
+date: "2026-11-20"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    theme: cosmo
+    code-fold: true
+    embed-resources: true
+execute:
+  echo: false
+---
+
+# Understanding Common Method Bias
+
+## What are CMV and CMB?
+
+A construct is the idea we want to measure, such as trust, satisfaction, purchase intention, or perceived information quality. Because these ideas cannot always be observed directly, we often represent them with several questionnaire items.
+
+Common method variance (CMV) is variation in the observed responses that comes from features of the measurement procedure, rather than only from the constructs of interest. Common method bias (CMB) refers to the resulting distortion in a measure or in an estimated relationship. The two terms are related, but it is useful not to use them as perfect synonyms.
+
+For example, suppose a respondent uses the highest rating for nearly every positive statement in a survey. Their answers may make *brand trust* and *purchase intention* look closely related partly because of a general tendency to agree. A high correlation does not, by itself, tell us whether we have found a meaningful theoretical relationship or a shared response pattern.
+
+## Random error versus systematic error
+
+| Measurement issue | What happens? | Why it matters |
+|:-----------------------|:-----------------------|:-----------------------|
+| Random measurement error | Responses vary unpredictably around the construct being measured. | Often weakens an observed correlation and makes estimates less precise. |
+| Systematic measurement error | A consistent influence—such as mood, wording, or a response habit—affects multiple answers. | Can change the strength or direction of an estimated relationship, sometimes making unrelated constructs appear related. |
+
+The lecture video gives a useful numerical illustration (approximately 9:35–11:20). It starts with a true correlation of 0.50. In its simulated examples, random noise reduces the observed correlation to about 0.29, while shared systematic error increases it to about 0.77. The important point is not to memorize these numbers as universal estimates. They illustrate why random and systematic error can cause quite different problems.
+
+> Key distinction: A statistically significant relationship is not automatically convincing evidence of the hypothesized relationship if the way the variables were measured offers a plausible competing explanation.
+
+# Where Method Bias Comes From
+
+The earlier review by Podsakoff et al. (2003) is especially useful for organizing potential sources into four broad categories. The examples below translate these issues into the context of survey research.
+
+## 1. Common rater or source effects
+
+When the same person rates both the predictor and the outcome, their personal response tendencies can influence both. Relevant examples include:
+
+- Consistency motives: wanting later answers to fit earlier answers.
+- Social desirability: choosing responses that seem more acceptable to others.
+- Acquiescence: agreeing with statements regardless of their content.
+- General mood or attitude: evaluating several questions positively or negatively because of a broader feeling.
+
+Consider asking the same person whether a website is trustworthy and whether they intend to contact the business. A favorable overall impression could push both answers upward. That does not prove the trust–intention relationship is false, but it gives us something else to consider when interpreting it.
+
+## 2. Item characteristics
+
+The way questions are written can also create shared variation. Repeated Likert-type scales, similar response anchors, vague wording, and items that imply a preferred answer can all influence how people respond. For instance, asking whether a website is *helpful and reliable* combines two ideas in one item. A respondent might agree with one and disagree with the other, which makes their answer difficult to interpret.
+
+## 3. Item context and ordering
+
+A question can change how a respondent thinks about the questions that follow. If people first read several statements about a brand's strengths, that positive context may influence their later overall brand evaluation. Putting highly similar items next to one another can also encourage repeated responses rather than separate judgments.
+
+## 4. Measurement context
+
+Responses may be influenced by whether variables are measured at the same time, in the same setting, or using the same medium. A one-time online questionnaire is therefore worth examining for possible method effects, especially when the main constructs are all self-reported attitudes or perceptions. However, a single survey does not establish that bias occurred.
+
+# Why It Matters for Research Results
+
+## Validity and reliability
+
+A questionnaire can appear internally consistent partly because respondents use a consistent response style. As a result, an apparently strong scale does not automatically show that all of its shared variation represents the construct we intended to measure. This is why measurement quality involves more than reporting a high reliability coefficient.
+
+## Correlations, regression, and SEM
+
+If a method-related influence affects two measured variables, their estimated association may be distorted. The bias can make a real relationship appear stronger, make it appear weaker, or—under some circumstances—produce an association where no substantive one exists. This matters in regression and structural equation modeling (SEM), where researchers may interpret path coefficients as support for a theoretical framework.
+
+A mediator or moderator can also be involved in a study with method effects. However, we should not assume that every mediation or moderation estimate is automatically biased in the same way. The implications depend on the measures, model, and source of the shared influence.
+
+## Is common method bias always severe?
+
+No. An important takeaway from the 2012 article is that researchers disagree about how widespread and damaging method effects are. The review also discusses evidence that different measures can be affected unequally. A blanket correction that assumes one common influence affects every item in exactly the same way may therefore be misleading.
+
+The practical question is not simply *“Did we use a survey?”* It is *“Which parts of our measurement process might create a rival explanation for the relationships we plan to report?”*
+
+# How Researchers Can Reduce CMB
+
+## Procedural remedies: Plan before collecting data
+
+These remedies are usually easiest to apply when a study is being designed rather than after the responses have been collected.
+
+| Remedy | How it helps | Practical caution |
+|:-----------------------|:-----------------------|:-----------------------|
+| Different sources | Obtain predictors and outcomes from different respondents or combine surveys with independent records. | Some attitudes and feelings can only be reported meaningfully by the individual. |
+| Temporal separation | Measure constructs at different times to reduce immediate carryover between answers. | A long delay can create attrition or miss a rapidly changing phenomenon. |
+| Question and section separation | Place conceptually different measures in distinct sections when appropriate. | Adding unnecessary filler questions may increase fatigue. |
+| Clear, neutral wording | Reduce ambiguity, leading questions, and confusing double-barreled items. | Keep the intended construct intact when revising wording. |
+| Privacy and nonjudgmental instructions | Reduce pressure to provide socially acceptable answers. | Anonymity cannot be promised if individual responses are identifiable. |
+| Suitable response formats | Avoid making all constructs look artificially identical when different formats are appropriate. | Changing an established scale may damage its validity. |
+
+A lesson from both reviews is that a remedy can create trade-offs. For example, reverse-worded items may discourage automatic agreement, yet confusing negatives can introduce a new source of measurement error. Likewise, separating questions should improve the design rather than make the survey unnecessarily long or difficult.
+
+## Statistical remedies: Check the remaining concern
+
+When method bias remains plausible after good design decisions, researchers may consider statistical approaches. These methods answer somewhat different questions and are not interchangeable.
+
+| Technique | Basic idea | Main limitation |
+|:-----------------------|:-----------------------|:-----------------------|
+| Harman's single-factor test | Examine whether the items seem to be dominated by one factor. | A weak diagnostic; failing to find one dominant factor does not rule out CMB. |
+| Marker variable | Include a theoretically unrelated measure to help estimate shared method effects. | Choosing a valid marker is difficult, and it may not capture the relevant sources of bias. |
+| Common latent method factor (SEM/CFA) | Model an additional latent factor that may account for shared variation across indicators. | It may absorb substantive variation as well as method variation; identification and assumptions matter. |
+| Directly measured method factor / response-style measures | Collect measures of a suspected influence, such as acquiescence or social desirability. | Requires advance planning and can only address the influences actually measured. |
+| Instrumental variable approach | Use a suitable external variable to address a particular source of endogeneity. | Valid instruments are difficult to justify and verify. |
+
+I would not treat a passed Harman test as proof that the data are free from method bias. A better approach is to explain the study's specific risks, show what was done in the questionnaire design, and use statistical checks only when their assumptions and available data make sense.
+
+# Application to a Consumer Survey
+
+Suppose a marketing survey asks people to review a business website and then rate the information's clarity, usefulness, trustworthiness, and whether they would contact the business. These measures are related conceptually, but they are also collected from the same person immediately after the same experience.
+
+Here are practical steps I would consider:
+
+1.  Before the survey: Keep rating items clear and focused on one idea each. Avoid leading language that suggests the website *should* be helpful or trustworthy.
+2.  During the survey: Distinguish whether respondents actually reviewed the material from whether they simply opened the link. Offer a meaningful “cannot judge” option when appropriate.
+3.  Across measures: Where feasible, compare survey responses with a separate website content audit or observable inquiry activity rather than assuming stated intention equals actual behavior.
+4.  In the analysis: Report the survey's shared-source and cross-sectional limitations. Avoid making causal claims from correlations alone.
+5.  In the write-up: Explain why each chosen safeguard addresses a real possibility in the design, instead of listing tests merely to say that CMB has been “solved.”
+
+These precautions do not guarantee bias-free data. They make the findings easier to evaluate and give readers a clearer picture of what the evidence does—and does not—support.
+
+# Main Takeaways and Reflection
+
+The most useful change in how I understand this topic is recognizing that measurement is part of the explanation for a result. Before this reading, it would have been easy to focus on whether variables were statistically related and overlook the way they were measured. The article and lecture show why that is incomplete.
+
+I would remember five points for future assignments:
+
+1.  CMV is method-related variation; CMB is the distortion it can create.
+2.  Sharing a respondent, item style, or measurement setting raises a question—not an automatic verdict that a study is invalid.
+3.  Method-related influences may affect some measures more than others, so broad assumptions about a uniform bias are risky.
+4.  Strong research design is preferable to relying exclusively on a statistical correction after data collection.
+5.  When reporting survey-based SEM or regression results, distinguish observed associations from causal conclusions.
+
+Bottom line: Common method bias is best handled as a research design and interpretation issue, not as a box to check at the end of an analysis. Researchers should identify plausible sources, prevent what they reasonably can, and remain transparent about what their measurements allow them to conclude.
+
+# References
+
+Podsakoff, P. M., MacKenzie, S. B., & Podsakoff, N. P. (2012). Sources of method bias in social science research and recommendations on how to control it. *Annual Review of Psychology, 63*, 539–569. https://doi.org/10.1146/annurev-psych-120710-100452
+
+Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P. (2003). Common method biases in behavioral research: A critical review of the literature and recommended remedies. *Journal of Applied Psychology, 88*(5), 879–903. https://doi.org/10.1037/0021-9010.88.5.879
+
+# Appendix
+
+- GitHub repository
+- Published GitHub Pages
